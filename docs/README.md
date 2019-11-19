@@ -43,7 +43,7 @@ Create a new repository from [octocat-zen](https://github.com/octodemo/octocat-z
 - Provide a repository name, for example `<your handle>-octocat-zen`.
 - Click `Create repository from template`.
 - If you want to use your favorite editor, you can clone the repository to your local machine.
-- In `package.json` update the `name` and `repository` and commit the change.
+- In `package.json` update the `name` from `@octocat/octocat-zen` to the right owner and repository name and also update the `repository url` and commit the change.
 - In `.npmrc` update the scope ands commit the change.
 
 ### Resources
@@ -431,9 +431,10 @@ With the Deployment API you can report a deployment status in the pull request:
 
 In this lab we will publish our project as npm package to GitHub Package Registry.
 
+- Check `package.json` to make sure the `name` is set to the right owner and repository name.
 - Add the following job to the workflow:
 
-**Note:** make sure to your handle to the scope.
+**Note:** make sure to add your handle to the scope.
 
 ```yaml
 publish-gpr:
