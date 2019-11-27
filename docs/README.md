@@ -211,6 +211,7 @@ format('Hello {0} {1} {2} {3}', 'Hubot', 'the', 'friendly', 'robot')
 - For example:
 
 ```yaml
+{% raw %}
 - name: Outputs 
   env:
     EVENT_NAME: ${{ github.event_name }}
@@ -219,6 +220,7 @@ format('Hello {0} {1} {2} {3}', 'Hubot', 'the', 'friendly', 'robot')
   run: |
     echo "Event name $EVENT_NAME and ref $REF"
     echo "$ROBOT"
+{% endraw %}
 ```
 
 You can process the variables like any other environment variable, for example to replace `Hubot` with `Probot`:
