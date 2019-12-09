@@ -2,6 +2,10 @@
 
 This hands-on workshop provides a introduction to building pipeline workflows using GitHub Actions and creating your first GitHub Action using JavaScript, TypeScript or Docker.
 
+## Welcome
+
+Welcome all to the full-day workshop on GitHub Actions and Packages
+
 ## Agenda
 
 - Introduction to GitHub Actions.
